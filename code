@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class ChefPlacementTest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int T = scanner.nextInt(); // Number of test cases
+
+        while (T-- > 0) {
+            int X = scanner.nextInt(); // Total points for the problem
+            int N = scanner.nextInt(); // Number of test cases which pass for Chef's solution
+            int scorePerTestCase = X / 10; // Each test case is worth X/10 points
+            int chefScore = scorePerTestCase * N; // Calculate the score Chef will get
+
+            System.out.println(chefScore);
+        }
+
+        scanner.close();
+    }
+}
